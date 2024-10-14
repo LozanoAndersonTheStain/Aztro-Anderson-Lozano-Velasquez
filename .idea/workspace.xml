@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a41259df-3b0e-4685-89f1-af69b918540c" name="Changes" comment="Project Started">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a41259df-3b0e-4685-89f1-af69b918540c" name="Changes" comment="The environment variables are created, and the data persistence file is created.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +136,7 @@
       <workItem from="1728697235910" duration="719000" />
       <workItem from="1728869066947" duration="1510000" />
       <workItem from="1728870706115" duration="1253000" />
-      <workItem from="1728917561705" duration="5651000" />
+      <workItem from="1728917561705" duration="10426000" />
     </task>
     <task id="LOCAL-00001" summary="Project Started">
       <option name="closed" value="true" />
@@ -151,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728697417992</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="The environment variables are created, and the data persistence file is created.">
+      <option name="closed" value="true" />
+      <created>1728934566031</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728934566031</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +165,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project Started" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project Started" />
+    <MESSAGE value="The environment variables are created, and the data persistence file is created." />
+    <option name="LAST_COMMIT_MESSAGE" value="The environment variables are created, and the data persistence file is created." />
   </component>
 </project>
