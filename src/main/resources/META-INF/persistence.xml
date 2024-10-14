@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+    <persistence-unit name="myPU">
+        <!-- Entity classes to be used by JPA -->
+
+        <!-- Other types of entities -->
+
+        <properties>
+            <!-- Configuration of the connection to the database -->
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="DB_URL"/>
+            <property name="jakarta.persistence.jdbc.user" value="DB_USER"/>
+            <property name="jakarta.persistence.jdbc.password" value="DB_PASSWORD"/>
+
+            <!-- database-specific dialect -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+
+            <!-- Additional Hibernate configurations -->
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>

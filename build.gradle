@@ -10,8 +10,21 @@ repositories {
 }
 
 dependencies {
+    // Dependencies para JUnit
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    // JPA (Jakarta Persistence API)
+    implementation 'jakarta.persistence:jakarta.persistence-api:3.1.0'
+
+    // Hibernate (Proved JPA)
+    implementation 'org.hibernate.orm:hibernate-core:6.2.10.Final'
+
+    // Connector PostgreSQL
+    implementation 'org.postgresql:postgresql:42.7.4'
+
+    // Librería para leer archivos .env
+    implementation 'io.github.cdimascio:dotenv-java:3.0.0'
 }
 
 test {
