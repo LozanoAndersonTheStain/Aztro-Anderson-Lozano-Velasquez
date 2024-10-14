@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a41259df-3b0e-4685-89f1-af69b918540c" name="Changes" comment="The environment variables are created, and the data persistence file is created.">
+    <list default="true" id="a41259df-3b0e-4685-89f1-af69b918540c" name="Changes" comment="Connection to the database is tested">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/config/DataBaseConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/Main.java" afterDir="false" />
     </list>
@@ -22,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -40,6 +42,9 @@
     &quot;accountId&quot;: &quot;77c174ac-ceef-4213-8a24-5eb0fbbe2656&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -136,7 +141,7 @@
       <workItem from="1728697235910" duration="719000" />
       <workItem from="1728869066947" duration="1510000" />
       <workItem from="1728870706115" duration="1253000" />
-      <workItem from="1728917561705" duration="10426000" />
+      <workItem from="1728917561705" duration="12649000" />
     </task>
     <task id="LOCAL-00001" summary="Project Started">
       <option name="closed" value="true" />
@@ -154,7 +159,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728934566031</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Connection to the database is tested">
+      <option name="closed" value="true" />
+      <created>1728939690271</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728939690271</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Connection to the database is tested">
+      <option name="closed" value="true" />
+      <created>1728939733114</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728939733114</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +187,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project Started" />
     <MESSAGE value="The environment variables are created, and the data persistence file is created." />
-    <option name="LAST_COMMIT_MESSAGE" value="The environment variables are created, and the data persistence file is created." />
+    <MESSAGE value="Connection to the database is tested" />
+    <option name="LAST_COMMIT_MESSAGE" value="Connection to the database is tested" />
   </component>
 </project>
