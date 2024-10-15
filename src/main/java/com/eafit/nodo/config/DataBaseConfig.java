@@ -15,8 +15,17 @@ public class DataBaseConfig {
                     dotenv.get("DB_USER"),
                     dotenv.get("DB_PASSWORD")
             );
+            if (connection != null && connection.isValid(2)) {
+                System.out.println("Connection to Database established");
+            } else {
+                System.out.println("Failed to establish connection to Database");
+            }
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            if (e.getSQLState().equals("08001")) {
+                System.out.println("Database is not exist: " + dotenv.get("DB_URL"));
+            } else {
+                System.out.println("Error: " + e.getMessage());
+            }
         }
         return connection;
     }
