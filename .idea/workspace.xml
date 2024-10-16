@@ -4,10 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a41259df-3b0e-4685-89f1-af69b918540c" name="Changes" comment="Connection to the database is tested">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/config/DataBaseConfig.java" afterDir="false" />
+    <list default="true" id="a41259df-3b0e-4685-89f1-af69b918540c" name="Changes" comment="Improved error handling for database connection is performed">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/config/JPAConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Compra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Marca.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Producto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/repositories/supermercado/ClienteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/repositories/supermercado/CompraRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/repositories/supermercado/MarcaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/repositories/supermercado/ProductoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/docs/documentation/documentation_conectionDataBase.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/docs/documentation/documentation_supermarket.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/config/DataBaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/config/DataBaseConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +37,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -42,8 +57,12 @@
     &quot;accountId&quot;: &quot;77c174ac-ceef-4213-8a24-5eb0fbbe2656&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -54,28 +73,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Aztro-Anderson-Lozano-Velasquez [:com.eafit.nodo.Main.main()].executor": "Run",
-    "Gradle.Aztro-Anderson-Lozano-Velasquez [dependencies].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Aztro-Anderson-Lozano-Velasquez [:com.eafit.nodo.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Aztro-Anderson-Lozano-Velasquez [dependencies].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Acer\Desktop\NODO\Aztro-Anderson-Lozano-Velasquez\src\main\resources\docs\documentation" />
       <recent name="C:\Users\Acer\Desktop\NODO\Aztro-Anderson-Lozano-Velasquez" />
     </key>
   </component>
@@ -141,7 +162,13 @@
       <workItem from="1728697235910" duration="719000" />
       <workItem from="1728869066947" duration="1510000" />
       <workItem from="1728870706115" duration="1253000" />
-      <workItem from="1728917561705" duration="12649000" />
+      <workItem from="1728917561705" duration="17330000" />
+      <workItem from="1729002669813" duration="4250000" />
+      <workItem from="1729013376687" duration="12887000" />
+      <workItem from="1729026385922" duration="513000" />
+      <workItem from="1729026912657" duration="3970000" />
+      <workItem from="1729033717412" duration="17752000" />
+      <workItem from="1729084979488" duration="3761000" />
     </task>
     <task id="LOCAL-00001" summary="Project Started">
       <option name="closed" value="true" />
@@ -175,7 +202,31 @@
       <option name="project" value="LOCAL" />
       <updated>1728939733114</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="The database connection is modified">
+      <option name="closed" value="true" />
+      <created>1728947812060</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728947812060</updated>
+    </task>
+    <task id="LOCAL-00006" summary="The database connection is modified">
+      <option name="closed" value="true" />
+      <created>1728947846673</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728947846673</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Improved error handling for database connection is performed">
+      <option name="closed" value="true" />
+      <created>1729024193434</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729024193434</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +239,12 @@
     <MESSAGE value="Project Started" />
     <MESSAGE value="The environment variables are created, and the data persistence file is created." />
     <MESSAGE value="Connection to the database is tested" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connection to the database is tested" />
+    <MESSAGE value="The database connection is modified" />
+    <MESSAGE value="Improved error handling for database connection is performed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved error handling for database connection is performed" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

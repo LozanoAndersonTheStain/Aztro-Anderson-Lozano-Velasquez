@@ -2,15 +2,18 @@
 <persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
     <persistence-unit name="myPU">
         <!-- Entity classes to be used by JPA -->
-
-        <!-- Other types of entities -->
+        <!-- supermercado -->
+        <class>com.eafit.nodo.models.supermercado.Cliente</class>
+        <class>com.eafit.nodo.models.supermercado.Marca</class>
+        <class>com.eafit.nodo.models.supermercado.Compra</class>
+        <class>com.eafit.nodo.models.supermercado.Producto</class>
 
         <properties>
             <!-- Configuration of the connection to the database -->
             <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-            <property name="jakarta.persistence.jdbc.url" value="DB_URL"/>
-            <property name="jakarta.persistence.jdbc.user" value="DB_USER"/>
-            <property name="jakarta.persistence.jdbc.password" value="DB_PASSWORD"/>
+            <property name="jakarta.persistence.jdbc.url" value="${jakarta.persistence.jdbc.url}"/>
+            <property name="jakarta.persistence.jdbc.user" value="${jakarta.persistence.jdbc.user}"/>
+            <property name="jakarta.persistence.jdbc.password" value="${jakarta.persistence.jdbc.password}"/>
 
             <!-- database-specific dialect -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>

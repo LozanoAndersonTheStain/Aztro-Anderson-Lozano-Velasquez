@@ -15,7 +15,10 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter'
 
     // JPA (Jakarta Persistence API)
-    implementation 'jakarta.persistence:jakarta.persistence-api:3.1.0'
+    implementation 'jakarta.persistence:jakarta.persistence-api:3.0.0'
+
+    // Jakarta Bean Validation
+    implementation 'jakarta.validation:jakarta.validation-api:3.0.2'
 
     // Hibernate (Proved JPA)
     implementation 'org.hibernate.orm:hibernate-core:6.2.10.Final'
@@ -23,10 +26,20 @@ dependencies {
     // Connector PostgreSQL
     implementation 'org.postgresql:postgresql:42.7.4'
 
-    // Librería para leer archivos .env
+    // Library for reading files .env
     implementation 'io.github.cdimascio:dotenv-java:3.0.0'
+
+    // Lombok
+    implementation 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
 }
 
 test {
     useJUnitPlatform()
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    sourceCompatibility = '11'
+    targetCompatibility = '11'
 }
