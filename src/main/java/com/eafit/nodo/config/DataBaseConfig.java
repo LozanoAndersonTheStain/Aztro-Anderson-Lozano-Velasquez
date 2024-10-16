@@ -7,6 +7,12 @@ import java.sql.*;
 public class DataBaseConfig {
     private static final Dotenv dotenv = Dotenv.configure().load();
 
+    public static void loadDatabaseProperties() {
+        System.setProperty("jakarta.persistence.jdbc.url", dotenv.get("DB_URL"));
+        System.setProperty("jakarta.persistence.jdbc.user", dotenv.get("DB_USER"));
+        System.setProperty("jakarta.persistence.jdbc.password", dotenv.get("DB_PASSWORD"));
+    }
+
     public static Connection getConnection() {
         Connection connection = null;
         try {

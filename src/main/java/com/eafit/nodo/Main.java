@@ -1,15 +1,29 @@
 package com.eafit.nodo;
 
-import com.eafit.nodo.config.DataBaseConfig;
-import java.sql.*;
+import com.eafit.nodo.config.JPAConfig;
+import com.eafit.nodo.models.supermercado.Cliente;
+import com.eafit.nodo.repositories.supermercado.ClienteRepository;
+
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        try (Connection connection = DataBaseConfig.getConnection()) {
-            System.out.println("Connection to Database established");
+        ClienteRepository clienteRepository = new ClienteRepository();
 
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
+        Cliente cliente = new Cliente();
+        cliente.setNombre("Anderson");
+        cliente.setApellido("Lozano");
+        cliente.setDireccion("Calle 123");
+        cliente.setTelefono("555-5679-0850");
+        clienteRepository.create(cliente);
+
+        List<Cliente> clientes = clienteRepository.findAll();
+
+        for (Cliente c : clientes) {
+            System.out.println(c.getCompras());
+            System.out.println(c);
         }
+
+        JPAConfig.closeEntityManagerFactory();
     }
 }
