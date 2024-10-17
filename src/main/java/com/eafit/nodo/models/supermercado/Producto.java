@@ -40,7 +40,7 @@ public class Producto {
     @Column(nullable = false)
     private String codigoBarras;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
     @JoinColumn(name = "marca_id", nullable = false)
     private Marca marca;
 
