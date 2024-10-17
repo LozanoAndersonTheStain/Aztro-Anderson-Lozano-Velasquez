@@ -4,24 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a41259df-3b0e-4685-89f1-af69b918540c" name="Changes" comment="Improved error handling for database connection is performed">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/config/JPAConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Compra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Marca.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Producto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/repositories/supermercado/ClienteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/repositories/supermercado/CompraRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/repositories/supermercado/MarcaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/repositories/supermercado/ProductoRepository.java" afterDir="false" />
+    <list default="true" id="a41259df-3b0e-4685-89f1-af69b918540c" name="Changes" comment="Download dependencies for good error handling, and create your basic configuration file.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/config/RepositoryConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/repositories/abstracts/AbstractRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/repositories/supermercado/GenericRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/logback.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/docs/documentation/documentation_conectionDataBase.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/docs/documentation/documentation_supermarket.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/config/DataBaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/config/DataBaseConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/config/JPAConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/config/JPAConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Compra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Compra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Marca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Marca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/repositories/supermercado/ClienteRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/repositories/supermercado/CompraRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/repositories/supermercado/MarcaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/repositories/supermercado/ProductoRepository.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,27 +74,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Aztro-Anderson-Lozano-Velasquez [:com.eafit.nodo.Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Aztro-Anderson-Lozano-Velasquez [dependencies].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Aztro-Anderson-Lozano-Velasquez [:com.eafit.nodo.Main.main()].executor": "Run",
+    "Gradle.Aztro-Anderson-Lozano-Velasquez [dependencies].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Acer\Desktop\NODO\Aztro-Anderson-Lozano-Velasquez\src\main\resources\docs\documentation" />
@@ -168,7 +169,8 @@
       <workItem from="1729026385922" duration="513000" />
       <workItem from="1729026912657" duration="3970000" />
       <workItem from="1729033717412" duration="17752000" />
-      <workItem from="1729084979488" duration="3761000" />
+      <workItem from="1729084979488" duration="15284000" />
+      <workItem from="1729101847054" duration="28990000" />
     </task>
     <task id="LOCAL-00001" summary="Project Started">
       <option name="closed" value="true" />
@@ -226,7 +228,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729024193434</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Supermarket models are created">
+      <option name="closed" value="true" />
+      <created>1729088793438</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729088793438</updated>
+    </task>
+    <task id="LOCAL-00009" summary="The repositories are created, the first client is generated, and the database connection is changed.">
+      <option name="closed" value="true" />
+      <created>1729088938842</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1729088938842</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +259,9 @@
     <MESSAGE value="Connection to the database is tested" />
     <MESSAGE value="The database connection is modified" />
     <MESSAGE value="Improved error handling for database connection is performed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved error handling for database connection is performed" />
+    <MESSAGE value="Supermarket models are created" />
+    <MESSAGE value="The repositories are created, the first client is generated, and the database connection is changed." />
+    <option name="LAST_COMMIT_MESSAGE" value="The repositories are created, the first client is generated, and the database connection is changed." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
