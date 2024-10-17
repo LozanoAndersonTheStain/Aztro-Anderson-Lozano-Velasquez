@@ -4,10 +4,11 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.*;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @Entity
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class Producto {
@@ -26,11 +27,11 @@ public class Producto {
 
     @NotNull
     @Column(nullable = false)
-    private Date fechaVencimiento;
+    private LocalDate fechaFabricacion;
 
     @NotNull
     @Column(nullable = false)
-    private Date fechaFabricacion;
+    private LocalDate fechaVencimiento;
 
     @NotNull
     @Column(nullable = false)
@@ -47,4 +48,21 @@ public class Producto {
     @Positive
     @Column(nullable = false)
     private double precio;
+
+    @Override
+    public String toString() {
+        return "Producto{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", cantidad=" + cantidad +
+                ", fechaFabricacion=" + fechaFabricacion +
+                ", fechaVencimiento=" + fechaVencimiento +
+                ", perecedero=" + perecedero +
+                ", codigoBarras='" + codigoBarras + '\'' +
+                ", marca=" + marca +
+                ", precio=" + precio +
+                '}';
+    }
+
+
 }

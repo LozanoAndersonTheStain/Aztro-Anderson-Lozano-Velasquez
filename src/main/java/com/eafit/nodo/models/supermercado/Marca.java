@@ -7,6 +7,7 @@ import lombok.*;
 
 @Entity
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class Marca {
@@ -19,9 +20,8 @@ public class Marca {
     @Column(nullable = false)
     private String nombre;
 
-    @Size(max = 500)
-    @Column(length = 500)
-    private String descripcion;
+    @Column(nullable = false)
+    private boolean activa;
 
     @NotBlank
     @Column(nullable = false)

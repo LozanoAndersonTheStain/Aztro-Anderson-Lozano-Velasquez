@@ -7,6 +7,7 @@ import lombok.*;
 
 @Entity
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class Cliente {
@@ -21,6 +22,9 @@ public class Cliente {
 
     @Column(nullable = false)
     private String apellido;
+
+    @Column(nullable = false)
+    private long cedula;
 
     @Column(nullable = false)
     private String direccion;
