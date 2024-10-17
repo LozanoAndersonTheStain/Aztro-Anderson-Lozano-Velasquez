@@ -83,7 +83,7 @@ public class SupermercadoCreator {
         clienteRepository.create(cliente2);
     }
 
-    public static  void listClientes(GenericRepository<Cliente> clienteRepository) {
+    public static void listClientes(GenericRepository<Cliente> clienteRepository) {
         logger.info("Consultando los clientes registrados");
         List<Cliente> clientes = clienteRepository.findAll(Cliente.class);
         for (Cliente cliente : clientes) {
