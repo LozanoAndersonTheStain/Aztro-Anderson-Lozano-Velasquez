@@ -1,29 +1,42 @@
 package com.eafit.nodo;
 
-import com.eafit.nodo.config.JPAConfig;
-import com.eafit.nodo.models.supermercado.Cliente;
-import com.eafit.nodo.repositories.supermercado.ClienteRepository;
+import com.eafit.nodo.SupermercadoCreator;
+import com.eafit.nodo.config.*;
+import com.eafit.nodo.models.supermercado.*;
+import com.eafit.nodo.repositories.GenericRepository;
+import lombok.extern.slf4j.Slf4j;
 
-import java.util.List;
-
+@Slf4j
 public class Main {
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Main.class.getName());
+
     public static void main(String[] args) {
-        ClienteRepository clienteRepository = new ClienteRepository();
+        try {
+            logger.info("Cargando la configuración de la base de datos");
+            DataBaseConfig.loadDatabaseProperties();
 
-        Cliente cliente = new Cliente();
-        cliente.setNombre("Anderson");
-        cliente.setApellido("Lozano");
-        cliente.setDireccion("Calle 123");
-        cliente.setTelefono("555-5679-0850");
-        clienteRepository.create(cliente);
+            logger.info("Iniciando la aplicación");
 
-        List<Cliente> clientes = clienteRepository.findAll();
+            GenericRepository<Cliente> clienteRepository = RepositoryConfig.clienteRepository;
+            GenericRepository<Producto> productoRepository = RepositoryConfig.productoRepository;
+            GenericRepository<Marca> marcaRepository = RepositoryConfig.marcaRepository;
+            GenericRepository<Compra> compraRepository = RepositoryConfig.compraRepository;
 
-        for (Cliente c : clientes) {
-            System.out.println(c.getCompras());
-            System.out.println(c);
+            logger.info("Creando tablas en la base de datos");
+
+            logger.info("Metodos de supermercado");
+            SupermercadoCreator.createMarcas(marcaRepository);
+            SupermercadoCreator.createProductos(productoRepository, marcaRepository);
+            SupermercadoCreator.createClientes(clienteRepository);
+            SupermercadoCreator.listClientes(clienteRepository);
+            SupermercadoCreator.createCompras(compraRepository, clienteRepository, productoRepository);
+            SupermercadoCreator.listCompras(compraRepository);
+
+        } catch (Exception e) {
+            logger.severe(e.getMessage());
+        } finally {
+            JPAConfig.getEntityManagerFactory().close();
+            logger.info("Finalizando la aplicación");
         }
-
-        JPAConfig.closeEntityManagerFactory();
     }
 }
