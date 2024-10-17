@@ -27,7 +27,7 @@ public class Marca {
     @Column(nullable = false)
     private String paisOrigen;
 
-    @Column
+    @Column(length = 1024)
     private String urlLogo;
 
     @OneToMany(mappedBy = "marca", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
