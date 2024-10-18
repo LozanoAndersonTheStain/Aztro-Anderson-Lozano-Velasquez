@@ -1,7 +1,7 @@
-package com.eafit.nodo;
+package com.eafit.nodo.services;
 
 import com.eafit.nodo.models.supermercado.*;
-import com.eafit.nodo.repositories.GenericRepository;
+import com.eafit.nodo.repositories.generics.GenericRepository;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;

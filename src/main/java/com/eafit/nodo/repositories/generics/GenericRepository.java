@@ -1,4 +1,4 @@
-package com.eafit.nodo.repositories;
+package com.eafit.nodo.repositories.generics;
 
 import com.eafit.nodo.config.JPAConfig;
 import java.util.List;
