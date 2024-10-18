@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a41259df-3b0e-4685-89f1-af69b918540c" name="Changes" comment="First exercise documentation and configuration files are generated.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/curso/Curso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/curso/Estudiante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/curso/Notas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/curso/Profesor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a41259df-3b0e-4685-89f1-af69b918540c" name="Changes" comment="Entities are created for the course">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/services/CusoCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/curso/Curso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/curso/Curso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/curso/Estudiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/curso/Estudiante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/curso/Notas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/curso/Notas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/curso/Profesor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/curso/Profesor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +167,7 @@
       <workItem from="1729197037398" duration="12311000" />
       <workItem from="1729213821683" duration="10802000" />
       <workItem from="1729278691349" duration="1592000" />
-      <workItem from="1729288588135" duration="4947000" />
+      <workItem from="1729288588135" duration="5276000" />
     </task>
     <task id="LOCAL-00001" summary="Project Started">
       <option name="closed" value="true" />
@@ -353,7 +353,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729290638967</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Entities are created for the course">
+      <option name="closed" value="true" />
+      <created>1729294787630</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1729294787630</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,7 +391,8 @@
     <MESSAGE value="The file EmpleadoCreator is generated to generate the various parameters" />
     <MESSAGE value="Successful functionality test is generated to create employee and so on." />
     <MESSAGE value="First exercise documentation and configuration files are generated." />
-    <option name="LAST_COMMIT_MESSAGE" value="First exercise documentation and configuration files are generated." />
+    <MESSAGE value="Entities are created for the course" />
+    <option name="LAST_COMMIT_MESSAGE" value="Entities are created for the course" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
