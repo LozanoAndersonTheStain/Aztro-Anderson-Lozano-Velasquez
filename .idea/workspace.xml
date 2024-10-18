@@ -4,25 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a41259df-3b0e-4685-89f1-af69b918540c" name="Changes" comment="Download dependencies for good error handling, and create your basic configuration file.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/config/RepositoryConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/repositories/abstracts/AbstractRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/repositories/supermercado/GenericRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/docs/documentation/documentation_conectionDataBase.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/docs/documentation/documentation_supermarket.md" afterDir="false" />
+    <list default="true" id="a41259df-3b0e-4685-89f1-af69b918540c" name="Changes" comment="Successful functionality test is generated to create employee and so on.">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/docs/documentation/connection_database/documentation_conectionDataBase.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/docs/documentation/documentation_JPAConfig.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/docs/documentation/reposiroty/documentation_genericRepository.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/docs/documentation/reposiroty/dumentation_abctractRepository.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/docs/documentation/supermercado/documentation_supermarket.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/docs/documentation/supermercado/documentation_supermercadoCreator.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/config/JPAConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/config/JPAConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Compra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Compra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Marca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Marca.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/models/supermercado/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/repositories/supermercado/ClienteRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/repositories/supermercado/CompraRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/repositories/supermercado/MarcaRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eafit/nodo/repositories/supermercado/ProductoRepository.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,29 +64,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Aztro-Anderson-Lozano-Velasquez [:com.eafit.nodo.Main.main()].executor": "Run",
-    "Gradle.Aztro-Anderson-Lozano-Velasquez [dependencies].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Aztro-Anderson-Lozano-Velasquez [:com.eafit.nodo.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Aztro-Anderson-Lozano-Velasquez [dependencies].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.VCS&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Acer\Desktop\NODO\Aztro-Anderson-Lozano-Velasquez\src\main\resources\docs\documentation\reposiroty" />
+      <recent name="C:\Users\Acer\Desktop\NODO\Aztro-Anderson-Lozano-Velasquez\src\main\resources\docs\documentation\connection_database" />
+      <recent name="C:\Users\Acer\Desktop\NODO\Aztro-Anderson-Lozano-Velasquez\src\main\resources\docs\documentation\supermercado" />
       <recent name="C:\Users\Acer\Desktop\NODO\Aztro-Anderson-Lozano-Velasquez\src\main\resources\docs\documentation" />
       <recent name="C:\Users\Acer\Desktop\NODO\Aztro-Anderson-Lozano-Velasquez" />
     </key>
@@ -170,7 +164,12 @@
       <workItem from="1729026912657" duration="3970000" />
       <workItem from="1729033717412" duration="17752000" />
       <workItem from="1729084979488" duration="15284000" />
-      <workItem from="1729101847054" duration="28990000" />
+      <workItem from="1729101847054" duration="37351000" />
+      <workItem from="1729184664902" duration="2042000" />
+      <workItem from="1729197037398" duration="12311000" />
+      <workItem from="1729213821683" duration="10802000" />
+      <workItem from="1729278691349" duration="1592000" />
+      <workItem from="1729288588135" duration="1906000" />
     </task>
     <task id="LOCAL-00001" summary="Project Started">
       <option name="closed" value="true" />
@@ -244,7 +243,111 @@
       <option name="project" value="LOCAL" />
       <updated>1729088938842</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="The @Builder annotator is added to create the objects and the UUID is implemented.">
+      <option name="closed" value="true" />
+      <created>1729143044281</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1729143044281</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Repositories are updated, to make them less docked">
+      <option name="closed" value="true" />
+      <created>1729143201865</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1729143201865</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Character length is added">
+      <option name="closed" value="true" />
+      <created>1729148348226</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1729148348226</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Marks must be persisted even if they are not in the database.">
+      <option name="closed" value="true" />
+      <created>1729148460216</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1729148460216</updated>
+    </task>
+    <task id="LOCAL-00014" summary="The remaining methods were added in order to create the following entities">
+      <option name="closed" value="true" />
+      <created>1729148509031</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1729148509031</updated>
+    </task>
+    <task id="LOCAL-00015" summary="File is created to create the tables separately and maintain greater control and maintainability">
+      <option name="closed" value="true" />
+      <created>1729148588708</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1729148588708</updated>
+    </task>
+    <task id="LOCAL-00016" summary="File is created to create the tables separately and maintain greater control and maintainability">
+      <option name="closed" value="true" />
+      <created>1729149106622</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1729149106622</updated>
+    </task>
+    <task id="LOCAL-00017" summary="The functionalities created in the SupermercadoCreator are added to perform your operations.">
+      <option name="closed" value="true" />
+      <created>1729149316568</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1729149316568</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Entities are created for employee">
+      <option name="closed" value="true" />
+      <created>1729289462641</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1729289462641</updated>
+    </task>
+    <task id="LOCAL-00019" summary="SupermercadoCreator and GenericRepository files is moved to a new position">
+      <option name="closed" value="true" />
+      <created>1729289623870</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1729289623870</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Entities are added to create employees and others">
+      <option name="closed" value="true" />
+      <created>1729289683300</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1729289683300</updated>
+    </task>
+    <task id="LOCAL-00021" summary="The file EmpleadoCreator is generated to generate the various parameters">
+      <option name="closed" value="true" />
+      <created>1729289742223</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1729289742223</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Successful functionality test is generated to create employee and so on.">
+      <option name="closed" value="true" />
+      <created>1729289971981</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1729289971981</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +364,19 @@
     <MESSAGE value="Improved error handling for database connection is performed" />
     <MESSAGE value="Supermarket models are created" />
     <MESSAGE value="The repositories are created, the first client is generated, and the database connection is changed." />
-    <option name="LAST_COMMIT_MESSAGE" value="The repositories are created, the first client is generated, and the database connection is changed." />
+    <MESSAGE value="The @Builder annotator is added to create the objects and the UUID is implemented." />
+    <MESSAGE value="Repositories are updated, to make them less docked" />
+    <MESSAGE value="Character length is added" />
+    <MESSAGE value="Marks must be persisted even if they are not in the database." />
+    <MESSAGE value="The remaining methods were added in order to create the following entities" />
+    <MESSAGE value="File is created to create the tables separately and maintain greater control and maintainability" />
+    <MESSAGE value="The functionalities created in the SupermercadoCreator are added to perform your operations." />
+    <MESSAGE value="Entities are created for employee" />
+    <MESSAGE value="SupermercadoCreator and GenericRepository files is moved to a new position" />
+    <MESSAGE value="Entities are added to create employees and others" />
+    <MESSAGE value="The file EmpleadoCreator is generated to generate the various parameters" />
+    <MESSAGE value="Successful functionality test is generated to create employee and so on." />
+    <option name="LAST_COMMIT_MESSAGE" value="Successful functionality test is generated to create employee and so on." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
