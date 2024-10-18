@@ -8,6 +8,12 @@
         <class>com.eafit.nodo.models.supermercado.Compra</class>
         <class>com.eafit.nodo.models.supermercado.Producto</class>
 
+        <!-- empleado -->
+        <class>com.eafit.nodo.models.empleado.Departamento</class>
+        <class>com.eafit.nodo.models.empleado.Empleado</class>
+        <class>com.eafit.nodo.models.empleado.Proyecto</class>
+        <class>com.eafit.nodo.models.empleado.Pago</class>
+
         <properties>
             <!-- Configuration of the connection to the database -->
             <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
