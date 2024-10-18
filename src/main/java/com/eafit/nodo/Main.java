@@ -1,10 +1,13 @@
 package com.eafit.nodo;
 
-import com.eafit.nodo.SupermercadoCreator;
 import com.eafit.nodo.config.*;
-import com.eafit.nodo.models.supermercado.*;
-import com.eafit.nodo.repositories.GenericRepository;
+
+import com.eafit.nodo.services.EmpleadoCreator;
+import com.eafit.nodo.models.empleado.*;
+import com.eafit.nodo.repositories.generics.GenericRepository;
 import lombok.extern.slf4j.Slf4j;
+
+import java.util.List;
 
 @Slf4j
 public class Main {
@@ -17,20 +20,20 @@ public class Main {
 
             logger.info("Iniciando la aplicación");
 
-            GenericRepository<Cliente> clienteRepository = RepositoryConfig.clienteRepository;
-            GenericRepository<Producto> productoRepository = RepositoryConfig.productoRepository;
-            GenericRepository<Marca> marcaRepository = RepositoryConfig.marcaRepository;
-            GenericRepository<Compra> compraRepository = RepositoryConfig.compraRepository;
+            // Repositories de empleado
+            GenericRepository<Departamento> departamentoRepository = RepositoryConfig.departamentoRepository;
+            GenericRepository<Proyecto> proyectoRepository = RepositoryConfig.proyectoRepository;
+            GenericRepository<Empleado> empleadoRepository = RepositoryConfig.empleadoRepository;
+            GenericRepository<Pago> pagoRepository = RepositoryConfig.pagoRepository;
 
             logger.info("Creando tablas en la base de datos");
 
-            logger.info("Metodos de supermercado");
-            SupermercadoCreator.createMarcas(marcaRepository);
-            SupermercadoCreator.createProductos(productoRepository, marcaRepository);
-            SupermercadoCreator.createClientes(clienteRepository);
-            SupermercadoCreator.listClientes(clienteRepository);
-            SupermercadoCreator.createCompras(compraRepository, clienteRepository, productoRepository);
-            SupermercadoCreator.listCompras(compraRepository);
+            logger.info("Metodos de empleado");
+            EmpleadoCreator.createDepartamentos(departamentoRepository);
+            EmpleadoCreator.createProyectos(proyectoRepository);
+            List<Empleado> empleados = EmpleadoCreator.createEmpleados(empleadoRepository, departamentoRepository, proyectoRepository);
+            EmpleadoCreator.createPagos(pagoRepository, empleados);
+            EmpleadoCreator.listEmpleados(empleadoRepository);
 
         } catch (Exception e) {
             logger.severe(e.getMessage());
