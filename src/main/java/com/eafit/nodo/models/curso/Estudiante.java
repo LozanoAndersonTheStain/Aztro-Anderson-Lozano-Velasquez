@@ -23,12 +23,17 @@ public class Estudiante {
     private String apellido;
 
     @Column(nullable = false)
+    private String documento;
+
+    @Column(nullable = false)
+    private String edad;
+
+    @Column(nullable = false)
     private String email;
+
+    @ManyToMany(mappedBy = "estudiantes")
+    private List<Curso> cursos;
 
     @OneToMany(mappedBy = "estudiante", cascade = CascadeType.ALL)
     private List<Notas> notas;
-
-    @ManyToOne
-    @JoinColumn(name = "curso_id")
-    private Curso curso;
 }

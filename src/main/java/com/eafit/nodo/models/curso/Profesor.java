@@ -23,6 +23,9 @@ public class Profesor {
     private String apellido;
 
     @Column(nullable = false)
+    private String documento;
+
+    @Column(nullable = false)
     private String email;
 
     @OneToMany(mappedBy = "profesor", cascade = CascadeType.ALL)
