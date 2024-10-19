@@ -1,13 +1,8 @@
 package com.eafit.nodo.config;
 
-import com.eafit.nodo.models.empleado.Departamento;
-import com.eafit.nodo.models.empleado.Empleado;
-import com.eafit.nodo.models.empleado.Pago;
-import com.eafit.nodo.models.empleado.Proyecto;
-import com.eafit.nodo.models.supermercado.Cliente;
-import com.eafit.nodo.models.supermercado.Compra;
-import com.eafit.nodo.models.supermercado.Marca;
-import com.eafit.nodo.models.supermercado.Producto;
+import com.eafit.nodo.models.curso.*;
+import com.eafit.nodo.models.empleado.*;
+import com.eafit.nodo.models.supermercado.*;
 import com.eafit.nodo.repositories.generics.GenericRepository;
 
 public class RepositoryConfig {
@@ -22,6 +17,12 @@ public class RepositoryConfig {
     public static final GenericRepository<Empleado> empleadoRepository;
     public static final GenericRepository<Pago> pagoRepository;
     public static final GenericRepository<Proyecto> proyectoRepository;
+
+    //Curso
+    public static final GenericRepository<Curso> cursoRepository;
+    public static final GenericRepository<Estudiante> estudianteRepository;
+    public static final GenericRepository<Notas> notasRepository;
+    public static final GenericRepository<Profesor> profesorRepository;
 
     static {
         //SuperMercado
@@ -49,5 +50,18 @@ public class RepositoryConfig {
 
         JPAConfig<Proyecto> jpaConfigProyecto = new JPAConfig<>();
         proyectoRepository = new GenericRepository<>(jpaConfigProyecto);
+
+        //Curso
+        JPAConfig<Curso> jpaConfigCurso = new JPAConfig<>();
+        cursoRepository = new GenericRepository<>(jpaConfigCurso);
+
+        JPAConfig<Estudiante> jpaConfigEstudiante = new JPAConfig<>();
+        estudianteRepository = new GenericRepository<>(jpaConfigEstudiante);
+
+        JPAConfig<Notas> jpaConfigNotas = new JPAConfig<>();
+        notasRepository = new GenericRepository<>(jpaConfigNotas);
+
+        JPAConfig<Profesor> jpaConfigProfesor = new JPAConfig<>();
+        profesorRepository = new GenericRepository<>(jpaConfigProfesor);
     }
 }
