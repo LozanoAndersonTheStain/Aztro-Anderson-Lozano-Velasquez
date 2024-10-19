@@ -1,10 +1,9 @@
 package com.eafit.nodo;
 
 import com.eafit.nodo.config.*;
-
-import com.eafit.nodo.services.EmpleadoCreator;
-import com.eafit.nodo.models.empleado.*;
+import com.eafit.nodo.models.curso.*;
 import com.eafit.nodo.repositories.generics.GenericRepository;
+import com.eafit.nodo.services.CursoCreator;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
@@ -20,23 +19,20 @@ public class Main {
 
             logger.info("Iniciando la aplicación");
 
-            // Repositories de empleado
-            GenericRepository<Departamento> departamentoRepository = RepositoryConfig.departamentoRepository;
-            GenericRepository<Proyecto> proyectoRepository = RepositoryConfig.proyectoRepository;
-            GenericRepository<Empleado> empleadoRepository = RepositoryConfig.empleadoRepository;
-            GenericRepository<Pago> pagoRepository = RepositoryConfig.pagoRepository;
+            // Repositories de curso
+            GenericRepository<Curso> cursoRepository = RepositoryConfig.cursoRepository;
+            GenericRepository<Estudiante> estudianteRepository = RepositoryConfig.estudianteRepository;
+            GenericRepository<Notas> notasRepository = RepositoryConfig.notasRepository;
+            GenericRepository<Profesor> profesorRepository = RepositoryConfig.profesorRepository;
 
             logger.info("Creando tablas en la base de datos");
 
-            logger.info("Metodos de empleado");
-            EmpleadoCreator.createDepartamentos(departamentoRepository);
-            EmpleadoCreator.createProyectos(proyectoRepository);
-            List<Empleado> empleados = EmpleadoCreator.createEmpleados(empleadoRepository, departamentoRepository, proyectoRepository);
-            EmpleadoCreator.createPagos(pagoRepository, empleados);
-            EmpleadoCreator.listEmpleados(empleadoRepository);
+            logger.info("Metodos de creacion de cursos");
+            CursoCreator.createProfesores(profesorRepository);
+            CursoCreator.listarProfesores(profesorRepository);
 
         } catch (Exception e) {
-            logger.severe(e.getMessage());
+            logger.severe("Error occurred: " + e.getMessage());
         } finally {
             JPAConfig.getEntityManagerFactory().close();
             logger.info("Finalizando la aplicación");
