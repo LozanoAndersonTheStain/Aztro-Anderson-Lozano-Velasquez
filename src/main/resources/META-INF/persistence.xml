@@ -14,6 +14,12 @@
         <class>com.eafit.nodo.models.empleado.Proyecto</class>
         <class>com.eafit.nodo.models.empleado.Pago</class>
 
+        <!-- curso -->
+        <class>com.eafit.nodo.models.curso.Curso</class>
+        <class>com.eafit.nodo.models.curso.Estudiante</class>
+        <class>com.eafit.nodo.models.curso.Notas</class>
+        <class>com.eafit.nodo.models.curso.Profesor</class>
+
         <properties>
             <!-- Configuration of the connection to the database -->
             <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
