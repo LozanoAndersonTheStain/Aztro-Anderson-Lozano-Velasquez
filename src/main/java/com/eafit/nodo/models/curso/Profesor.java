@@ -28,6 +28,6 @@ public class Profesor {
     @Column(nullable = false)
     private String email;
 
-    @OneToMany(mappedBy = "profesor", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "profesor", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Curso> cursos;
 }

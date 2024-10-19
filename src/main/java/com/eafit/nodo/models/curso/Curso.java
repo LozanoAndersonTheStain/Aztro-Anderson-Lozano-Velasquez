@@ -30,15 +30,14 @@ public class Curso {
     @JoinColumn(name = "profesor_id", nullable = false)
     private Profesor profesor;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
-            name = "curso_estudiante", // Tabla intermedia
+            name = "curso_estudiante",
             joinColumns = @JoinColumn(name = "curso_id"),
             inverseJoinColumns = @JoinColumn(name = "estudiante_id")
     )
     private List<Estudiante> estudiantes;
 
-    // Relación OneToMany con Notas (varias notas por curso)
     @OneToMany(mappedBy = "curso", cascade = CascadeType.ALL)
     private List<Notas> notas;
 }

@@ -18,11 +18,11 @@ public class Notas {
     @Column(nullable = false)
     private double nota;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "estudiante_id")
     private Estudiante estudiante;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "curso_id")
     private Curso curso;
 }

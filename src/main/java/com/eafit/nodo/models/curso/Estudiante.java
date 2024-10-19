@@ -31,7 +31,7 @@ public class Estudiante {
     @Column(nullable = false)
     private String email;
 
-    @ManyToMany(mappedBy = "estudiantes")
+    @ManyToMany(mappedBy = "estudiantes", fetch = FetchType.EAGER)
     private List<Curso> cursos;
 
     @OneToMany(mappedBy = "estudiante", cascade = CascadeType.ALL)
